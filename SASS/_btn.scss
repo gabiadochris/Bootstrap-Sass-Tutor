@@ -1,0 +1,7 @@
+@use "./color" as *;
+
+.heroBtnColor {
+  background: $btnColor;
+  border-radius: 3px;
+  width: 10vw;
+}

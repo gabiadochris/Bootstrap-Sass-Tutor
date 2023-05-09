@@ -1,0 +1,14 @@
+@use "./color" as *;
+
+@mixin Card {
+  background-color: $cardBodyColor !important;
+}
+
+.cardBtnColor {
+  background-color: $cardBtnColor;
+  width: 20vw;
+}
+
+.cardBgColor {
+  background-color: $cardBodyColor;
+}

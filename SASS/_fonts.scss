@@ -1,0 +1,58 @@
+@mixin fonts {
+  font-family: "Lato";
+}
+
+@mixin H1 {
+  @include fonts;
+  font: {
+    style: normal;
+    weight: 700;
+    size: 2.875rem;
+  }
+}
+
+@mixin H2 {
+  @include fonts;
+  font: {
+    style: normal;
+    weight: 700;
+    size: 3rem;
+  }
+}
+
+@mixin H3 {
+  @include fonts;
+  font: {
+    style: normal;
+    weight: 700;
+    // size: 2.1875rem;
+  }
+}
+@mixin pFont {
+  @include fonts;
+  font: {
+    style: normal;
+    weight: 400;
+    // size: 2.25rem;
+  }
+}
+
+// All Styles Starts
+
+// Hero Section Stylings starts
+.heroSection {
+  .heroHeader {
+    @include H1;
+  }
+
+  .heroParagraph {
+    @include pFont;
+  }
+}
+// Hero Section Stylings Ends
+
+.teamTitle {
+  @include H2;
+}
+
+// All Styles Ends
